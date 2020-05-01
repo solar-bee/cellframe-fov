@@ -60,7 +60,7 @@ class NetConfigManager:
 
     def clear_temp_files(self):
         print("Clearing temp files...")
-        for temp_dir in self.node_file_structure.temp_dirs:
+        for temp_dir in self.node_file_structure.files_to_clean:
             try:
                 shutil.rmtree(temp_dir)
             except FileNotFoundError:

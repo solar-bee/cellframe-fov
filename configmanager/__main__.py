@@ -24,7 +24,7 @@ def main():
     node_file_structure = NodeFileStructure(node_path)
     config_manager = NetConfigManager(node_file_structure)
 
-    if args.action == 'clear':
+    if args.action == 'clean':
         config_manager.clear_active_nets()
     elif args.action == 'backup':
         if args.network is None:
